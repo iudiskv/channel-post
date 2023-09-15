@@ -2,7 +2,7 @@
 error_reporting(~E_ALL);
 define('API_KEY',"توکن"); //TOKEN
 $admin = 7885454; //آیدی عددی ادمین
-$channel = '@Source_Home'; //آیدی کانال ارسال پست
+$channel = '@Source_Home'; //آیدی کانال ارسال پس
 function Bot($method, $datas=[]){
 	$ch = curl_init();
 	curl_setopt_array($ch, [
