@@ -81,7 +81,7 @@ $users = file_get_contents("users.txt");
 $box = file_get_contents("box.txt");
 $date = file_get_contents("data/$from_id/date.txt");
 $step = file_get_contents("data/$from_id/step.txt");
-if(preg_match('/^\/start$/i',$text)){
+if(preg_match('/^\/start$/i',$text))
 	if(!in_array($from_id, explode("\n",$users))){
 		save("users.txt","$from_id\n");
 		mkdir("data/$from_id");
