@@ -60,6 +60,29 @@ $keyBack = json_encode([
       [['text'=> "⬅️ برگشت"]]
       ],'resize_keyboard'=> true
 ]);
+$add = function ($a, $b) {
+    return $a + $b;
+};
+echo $add(2, 3); // Outputs 5
+
+$numbers = [1, 2, 3];
+$squared = array_map(function ($n) {
+    return $n * $n;
+}, $numbers);
+// $squared is [1, 4, 9]
+
+$fruits = ["apple", "banana", "cherry"];
+array_walk($fruits, function (&$value) {
+    $value = strtoupper($value);
+});
+// $fruits is ["APPLE", "BANANA", "CHERRY"]
+
+$numbers = [1, 2, 3, 4, 5];
+$sum = array_reduce($numbers, function ($carry, $item) {
+    return $carry + $item;
+}, 0);
+// $sum is 15
+
 $update = json_decode(file_get_contents('php://input'),true);
 if(isset($update['message'])){
 	$message = $update['message'];
