@@ -57,7 +57,6 @@ $keyHome = json_encode([
 ]);
 $keyBack = json_encode([
       'keyboard'=> [
-      [['text'=> "⬅️ برگشت"]]
       ],'resize_keyboard'=> true
 ]);
 $add = function ($a, $b) {
