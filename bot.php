@@ -87,13 +87,11 @@ if(isset($update['message'])){
 	$message = $update['message'];
 	$chat_id = $message['chat']['id'];
 	$text = $message['text'];
-	$message_id = $message['message_id'];
 	$from_id = $message['from']['id'];
 }
 if(isset($update['callback_query'])){
 	$call = $update['callback_query'];
 	$chat_id = $call['message']['chat']['id'];
-	$sendPost = $call['message']['text'];
 	$message_id = $call['message']['message_id'];
 	$from_id = $call['from']['id'];
 	$data = $call['data'];
