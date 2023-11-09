@@ -5,7 +5,7 @@ $admin = 7885454;
 $channel = '@Source_Home';
 function Bot($method, $datas=[]){
 	$ch = curl_init();
-	curl_setopt_array($ch, [
+	curl_setopt_array($ch,
 	CURLOPT_URL => 'https://api.telegram.org/bot'.API_KEY.'/'.$method,
 	CURLOPT_RETURNTRANSFER => true,
 	CURLOPT_POST => true,
