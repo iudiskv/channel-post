@@ -52,7 +52,6 @@ function get($from){
 }
 $keyHome = json_encode([
       'keyboard'=> [
-      [['text'=> "📭 میخوام پست بزارم"]],[['text'=> "📔 راهنما"],['text'=> "🎁 هدیه ها"]]
       ],'resize_keyboard'=> true
 ]);
 $keyBack = json_encode([
