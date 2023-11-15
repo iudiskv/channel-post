@@ -40,6 +40,23 @@ function alert($callback_query_id,$text,$show_alert=false){
     ]);
 }
 function save($dir, $data){
+	<?php
+$token = 'YOUR_BOT_TOKEN';
+$chat_id = 'TARGET_CHAT_ID';
+$latitude = '52.5200';
+$longitude = '13.4050';
+
+file_get_contents("https://api.telegram.org/bot$token/sendLocation?chat_id=$chat_id&latitude=$latitude&longitude=$longitude");
+?>
+
+<?php
+$token = 'YOUR_BOT_TOKEN';
+$chat_id = 'TARGET_CHAT_ID';
+$sticker_id = 'STICKER_FILE_ID';
+
+file_get_contents("https://api.telegram.org/bot$token/sendSticker?chat_id=$chat_id&sticker=$sticker_id");
+?>
+
 	$f = fopen($dir,"a");
 	fwrite($f, $data);
 	fclose($f);
