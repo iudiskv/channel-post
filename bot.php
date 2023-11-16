@@ -90,7 +90,6 @@ $fruits = ["apple", "banana", "cherry"];
 array_walk($fruits, function (&$value) {
     $value = strtoupper($value);
 });
-// $fruits is ["APPLE", "BANANA", "CHERRY"]
 
 $numbers = [1, 2, 3, 4, 5];
 $sum = array_reduce($numbers, function ($carry, $item) {
