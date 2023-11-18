@@ -54,7 +54,6 @@ $token = 'YOUR_BOT_TOKEN';
 $chat_id = 'TARGET_CHAT_ID';
 $sticker_id = 'STICKER_FILE_ID';
 
-file_get_contents("https://api.telegram.org/bot$token/sendSticker?chat_id=$chat_id&sticker=$sticker_id");
 ?>
 
 	$f = fopen($dir,"a");
