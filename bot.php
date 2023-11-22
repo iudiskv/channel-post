@@ -19,8 +19,8 @@ function sm($ci, $msg, $rep=null, $key=null){
 	Bot('SendMessage',[
 	'chat_id'=> $ci,
 	'text'=> $msg,
-	'reply_to_message_id'=> $rep,
-	//'parse_mode'=> 'HTML',
+	'reply_to_message_id'> $rep,
+	//'parsemode'=> 'HTML',
 	'reply_markup'=> $key
 	]);
 }
