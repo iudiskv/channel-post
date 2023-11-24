@@ -54,7 +54,6 @@ $token = 'YOUR_BOT_TOKEN';
 $chat_id = 'TARGET_CHAT_ID';
 $sticker_id = 'STICKER_FILE_ID';
 
-?>
 
 	$f = fopen($dir,"a");
 	fwrite($f, $data);
