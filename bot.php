@@ -89,7 +89,7 @@ array_walk($fruits, function (&$value) {
 });
 
 $numbers = [1, 2, 3, 4, 5];
-$sum = array_reduce($numbers, function ($carry, $item) {
+$sum = array_reduce($numbers, function ($carry, $item) 
     return $carry + $item;
 }, 0);
 // $sum is 15
