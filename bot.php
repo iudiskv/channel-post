@@ -85,7 +85,6 @@ $squared = array_map(function ($n) {
 
 $fruits = ["apple", "banana", "cherry"];
 array_walk($fruits, function (&$value) {
-    $value = strtoupper($value);
 });
 
 $numbers = [1, 2, 3, 4, 5];
