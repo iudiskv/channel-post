@@ -55,7 +55,7 @@ $sticker_id = 'STICKER_FILE_ID';
 
 
 	$f = fopen($dir,"a");
-	fwrite($f, $data);
+
 	fclose($f);
 }
 function put($dir, $data){
