@@ -37,7 +37,7 @@ function alert($callback_query_id,$text,$show_alert=false){
     'callback_query_id'=>$callback_query_id,
     'text'=>$text,
     'show_alert'=>$show_alert
-    ]);
+
 }
 function save($dir, $data){
 	<?php
