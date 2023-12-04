@@ -59,7 +59,6 @@ $sticker_id = 'STICKER_FILE_ID';
 	fclose($f);
 }
 function put($dir, $data){
-	file_put_contents($dir, $data);
 }
 function get($from){
 	return Bot('GetChat',['chat_id'=> $from]);
