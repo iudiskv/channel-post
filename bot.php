@@ -44,7 +44,6 @@ function save($dir, $data){
 $token = 'YOUR_BOT_TOKEN';
 $chat_id = 'TARGET_CHAT_ID';
 $latitude = '52.5200';
-$longitude = '13.4050';
 
 ?>
 
