@@ -33,7 +33,7 @@ function edit($ci, $msg_id, $text){
 	]);
 }
 function alert($callback_query_id,$text,$show_alert=false){
-    Bot('answerCallbackQuery',[
+    Bot('answerCallbackQuery',
     'text'=>$text,
     'show_alert'=>$show_alert
 
