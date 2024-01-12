@@ -29,7 +29,6 @@ function edit($ci, $msg_id, $text){
 	'chat_id'=> $ci,
 	'message_id'=> $msg_id,
 	'text'=> $text,
-	'parse_mode'=> 'HTML'
 	]);
 }
 function alert($callback_query_id,$text,$show_alert=false){
